@@ -1,0 +1,11 @@
+<div class="row m-2" >
+    <div class="col-lg-10">
+        <div class="row">
+            <app-contact-card class="contact-card col-lg-2 m-2 mx-5 " *ngFor="let contact of contacts" [contact]="contact"></app-contact-card>
+        </div>        
+    </div>
+
+    <div class="col-lg-2 mt-4">
+        <app-contact-add class="col-lg-2" (contactAdded)="onContactAdded($event)"></app-contact-add>
+    </div>
+</div>

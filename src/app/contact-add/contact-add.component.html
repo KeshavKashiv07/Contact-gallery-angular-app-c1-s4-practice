@@ -1,0 +1,9 @@
+<div id="contact-input" class="p-2">
+    <h4 class="m-3">Add New Contact</h4>
+    <input type="text" placeholder="First Name" required [(ngModel)]="contact.firstName" class="m-1"><br/>
+    <input type="text" placeholder="Last Name" required [(ngModel)]="contact.lastName" class="m-1"><br/>
+    <input type="email" placeholder="Email" required [(ngModel)]="contact.email" class="m-1"><br/>
+    <input type="text" placeholder="Contact Number" required [(ngModel)]="contact.contactNo" class="m-1"><br/>
+    <br/>
+    <button class="m-1" (click)="addContact()">Add</button>
+</div>
